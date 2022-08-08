@@ -1,0 +1,54 @@
+<meta charset="UTF-8" />
+
+<div class="head">
+  <p class="head_text">EJS Page</p>
+  <div class="head_navigation">
+    <button>Home</button>
+    <button>Collections</button>
+    <button>About</button>
+  </div>
+</div>
+
+<style>
+  button {
+    outline: none;
+    border: none;
+    background-color: blueviolet;
+    padding: 15px;
+    border-radius: 2px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background-color: rgb(86, 0, 166);
+    transition: all;
+    transition-duration: 200ms;
+  }
+
+  .head {
+    background-color: rgb(57, 0, 92);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .head_text {
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .head_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+</style>
+<!-- CSS (load bootstrap from a CDN) -->

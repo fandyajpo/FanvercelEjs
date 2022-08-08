@@ -1,0 +1,64 @@
+<div class="profile_wrap">
+  <div class="pic_wrap">
+    <div class="profile_pic"></div>
+    <p class="profile_name"><%= name %></p>
+  </div>
+  <div class="profile_count">
+    <div>
+      <p class="count">Followers</p>
+      <p class="counted"><%= followers %></p>
+    </div>
+    <div>
+      <p class="count">Following</p>
+      <p class="counted"><%= following %></p>
+    </div>
+    <div>
+      <p class="count">Post</p>
+      <p class="counted"><%= posts %></p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .profile_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+  }
+
+  .profile_pic {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 50%;
+  }
+  .profile_count {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .count {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+  }
+
+  .counted {
+    color: rgb(54, 54, 54);
+  }
+
+  .profile_name {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+  }
+
+  .pic_wrap {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+</style>
